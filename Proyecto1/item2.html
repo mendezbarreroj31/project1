@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <style> 
+        .container {
+             display:flex;
+             position: relative;
+             vertical-align:space-around;
+             align-items:space-around;
+             align-content: space-around;
+             width: 1000px;      
+         }
+        </style>
+</head>
+<body>
+    <div class="container p-5">
+        <h2>Marca la posición que mejor identifique tu forma de trabajar:</h2>
+        </div>
+    
+        <div class="container p-5">
+    <form id="item2">
+        <div class="container p-5">
+
+            <div class="col-md-3">
+            <label for="seconditem">Sigo secuencias definidas</label>
+            </div>
+
+            <div class="col-md-3 ">
+               
+                    <input type="radio" id="rd1" name="it2" value= 1
+                           checked>
+                    <label for="1"></label>
+                  
+                    <input type="radio" id="rd2" name="it2" value= 2>
+                    <label for="2"></label>
+                 
+                    <input type="radio" id="rd3" name="it2" value=3>
+                    <label for="3"></label>
+                  
+                    <input type="radio" id="rd4" name="it2" value=4>
+                    <label for="4"></label>
+
+                    <input type="radio" id="rd5" name="it2" value=5>
+                    <label for="5"></label>
+
+                    <input type="radio" id="rd6" name="it2" value=6>
+                    <label for="6"></label>
+
+                    <input type="radio" id="rd7" name="it2" value=7>
+                    <label for="7"></label>
+
+                </div>
+            <div class="col-md-4"> <label for="seconditem"> Recurro a diferentes estrategías</label>
+                </div>
+
+                <div class="container p-5">         
+                    <button class="btn btn-primary" id="btn-it2">
+                        Siguiente
+                    </button> 
+                    </div>
+    </form>
+        </div>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyAjC-VFex6K0nZb6nUdRQ9CVTjdZvp5PLw",
+          authDomain: "proyecto1-59f06.firebaseapp.com",
+          projectId: "proyecto1-59f06",
+          storageBucket: "proyecto1-59f06.appspot.com",
+          messagingSenderId: "1077168128370",
+          appId: "1:1077168128370:web:f7f6d7c41a628d48569deb",
+          measurementId: "G-6LJSW66NQ1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+      </script>
+<script src="item2.js"></script> 
+</body>
+</html>
